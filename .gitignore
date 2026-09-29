@@ -1,0 +1,25 @@
+.venv/
+.venv-*/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.env
+.env.*
+!.env.example
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+# Internal development notes, not part of the public release.
+docs/superpowers/
+# Source photographs and generated images must never be committed by default.
+*.[aA][rR][wW]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[eE][xX][rR]
