@@ -1,13 +1,14 @@
 # ARW → Sony S-Gamut3.Cine / S-Log3
 
+## 还未开发完成！！！无法使用
+
 把 Sony A7C II 的 `.ARW` 照片转换为 **16-bit S-Gamut3.Cine / S-Log3 TIFF**。使用 Sony 公开的色彩定义，不复刻相机内部的视频处理。
 
 ## 操作方法（Windows，新手版）
 
-准备：电脑已经安装 **Python 3.11 或更新版本**，并且在命令行输入 `python --version` 能看到版本号。第一次安装依赖需要联网。**不用提供 GitHub 账号、密码或任何密钥。**
-
-1. 打开[项目 GitHub 页面](https://github.com/lchCrossley/ArwToSLOG3)，点击绿色 **Code** → **Download ZIP**，下载后解压到一个普通文件夹（不要在压缩包预览窗口里运行）。已经会用 Git 的人也可以执行 `git clone https://github.com/lchCrossley/ArwToSLOG3.git`。
-2. 打开解压后的项目文件夹，双击 `setup_windows.cmd`。它会在这个文件夹里创建专用的 `.venv` 虚拟环境，并安装本工具需要的库；首次运行请等待安装结束。看到 `Setup complete` 才算成功。这个过程不会把依赖安装进你原有的 Python 环境。
+准备：电脑已经安装 **Python 3.11 或更新版本**，并且在命令行输入 `python --version` 能看到版本号。第一次安装依赖需要联网。
+1. 点击绿色 **Code** → **Download ZIP**，下载后解压到一个普通文件夹（不要在压缩包预览窗口里运行）。如有git直接 `git clone https://github.com/lchCrossley/ArwToSLOG3.git`。
+2. 打开解压后的项目文件夹，双击 `setup_windows.cmd`。创建专用的 `.venv` 虚拟环境，并安装本工具需要的库；首次运行请等待安装结束。这个过程不会把依赖安装进你原有的 Python 环境。
 3. 找到要转换的 `.ARW` 文件，把**一个文件**拖到项目文件夹里的 `convert_windows.cmd` 上。黑色窗口会显示处理结果，按任意键关闭。
 4. 成功后，在原 `.ARW` 所在文件夹找同名的 `照片名_SLog3.tif`。原 `.ARW` 不会被修改；如果同名 TIFF 已存在，程序会报错并拒绝覆盖。
 
